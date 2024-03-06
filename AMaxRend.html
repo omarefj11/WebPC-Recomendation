@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Maximo Rendimiento</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  
+  <body class="container"> 
+
+    <header id="inicio">
+      <div class="header-content">
+        <img class="profile" src="img/perfil.jpg" width="100" />
+        <nav class="main-navigation">
+          <a href="Home.html">Inicio</a>
+          <a href="">Optimizacion</a>
+          <a href="">Programas</a>
+          <a href="About.html">Acerca de</a>
+        </nav>
+      </div>
+    </header>
+
+    <aside>
+      <div class="aside-content">
+        <h1>Indice</h1>
+        <div class="index-menu">
+          <ul>
+            <li>
+              <a href="#PlanEnergia">Plan de energía</a>
+            </li>
+            <li>
+              <a href="#PlanMaxRend">Plan maximo rendimiento</a>
+            </li>
+            <li>
+              <a href="#Activar">Como activarlo</a>
+            </li>
+          </ul>
+        </div>    
+      </div>
+    </aside>
+
+    <section>
+      <div class="section-content">
+        <div>
+          <h2 id="PlanEnergia">Plan de energía</h2>
+          <p>
+            Son configuraciones que controlan cómo se gestiona y utiliza la
+            energía en un dispositivo, especialmente en una computadora portátil o
+            de escritorio. Estos planes de energía permiten a los usuarios
+            equilibrar el rendimiento del sistema con la eficiencia energética,
+            ajustando configuraciones como la velocidad del procesador, la
+            pantalla y la suspensión del sistema.
+          </p>
+        </div>
+        <div>
+          <h2 id="PlanMaxRend">Plan Maximo Rendimiento</h2>
+          <p>
+            Este es un plan oculto por windows, que busca usar todo el hardware
+            para ganar un mejor rendimiento y una mejor experiencia, ya que se
+            limita algunos procesos. No todos los dispositivos logran tener un
+            cambio significativo ya que como se indica en la descripcion es mas
+            recomendable usarlo en dispositivos de gama alta
+          </p>
+          <img src="img_pc/MaxRendimiento.png" />
+        </div>
+        <div>
+          <h2 id="Activar">Como activarlo</h2>
+          <p>
+            Para activar el plan de energía de maximo rendimiento, se requiere
+            abrir Windows PowerShell con la tecla windows + x.
+          </p>
+          <img src="img_pc/powershell.PNG" />
+          <p>
+            Abrimos Windows PowerShell como administrador y les aparecera la
+            siguiente interfaz
+          </p>
+          <img src="img_pc/int powershell.PNG" />
+          <p>Dentro de la interfaz escribimos el siguiente comando:</p>
+          <input
+            type="text"
+            value="powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61"
+            disabled
+          />
+          <p>
+            Luego de introducir el comando, aparecera la activacion del plan de
+            energía de Maximo Rendimiento
+          </p>
+          <img src="img_pc/ActiveMaxRend.PNG" />
+          <p>
+            Y para verificar que ya se muestra nos dirigimos a las opciones de
+            energia y poder verificalo
+          </p>
+          <img src="img_pc/PlanCreado.PNG" />
+        </div>
+      </div>    
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <img class="profile" src="img/perfil.jpg" width="100" />
+        <div class="footer-navigation">
+          <a href="mailto:omarbalmaceda97@gmail.com">Contactar aqui</a>
+          <a href="https://github.com/omarefj11">GitHub</a>
+          <a href="https://www.linkedin.com/in/omaredgardobalmacedajurado/">Linkedin</a>
+        </div>
+      </div>      
+    </footer>
+
+    <a class="home" href="#">
+      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+      </svg>
+    </a>
+  </body>
+</html>
