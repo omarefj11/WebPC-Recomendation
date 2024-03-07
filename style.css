@@ -80,7 +80,7 @@ footer{
     align-items: center;
     justify-content: space-around;
 }
-/*----------------------------------*/
+/*---------------Img Perfil e iconos-------------------*/
 
 .profile{
     width: 70px ;
@@ -97,7 +97,16 @@ footer{
     right: 40px;
 }
 
+.linkedin{
+    color: #0999A9;
+}
 
+.github{
+    color: black;
+}
+
+
+/*---------------Responsive-------------------*/
 @media screen and (max-width: 767px) {
     .container{
         grid-template-columns: 1fr;
@@ -113,4 +122,43 @@ footer{
         width: 30px;
         height:  30px;
     }
+}
+/*--------------menu inicio(opciones)-----------------*/
+.opcion{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+
+.opcion-content{
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(68,74,102,.1)!important;
+}
+
+/*---------------Botones-----------------*/
+.highlight{
+    background-color: #EAEAEA;
+    padding: 10px;
+    width: 80%;
+}
+
+.highlight-copy-btn{
+    position: relative;
+    background-color: #7F7F7F;
+    color: white;
+    left: 50px;
+    border: 0px;
+    width: 70px;
+    border-radius: 10px;
+}
+
+.highlight-copy-btn:active{
+    background-color: rgb(50, 50, 56);
+}
+/*---------------Img-NaVegation-----------------*/
+
+.img-nv{
+    width:  90%;
+    border: 1px solid;
+    border-radius: 5px;
 }
