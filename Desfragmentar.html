@@ -7,14 +7,24 @@
 
   <body class="container">
 
+    <script src="scripts.js"></script>
+
     <header id="inicio">
       <div class="header-content">
         <img class="profile" src="img/perfil.jpg" width="100" />
+        <div class="div mode-color">
+          <label class="ui-switch">
+            <input onclick="toggleDarkMode()" type="checkbox">
+            <div class="slider">
+              <div class="circle"></div>
+            </div>
+          </label> 
+        </div>
         <nav class="main-navigation">
-            <a href="Home.html">Inicio</a>          
-            <a href="">Optimizacion</a>          
-            <a href="">Programas</a>          
-            <a href="About.html">Acerca de</a>
+            <a class="nav" href="Home.html">Inicio</a>          
+            <a class="nav" href="">Optimizacion</a>          
+            <a class="nav" href="">Programas</a>          
+            <a class="nav" href="About.html">Acerca de</a>
         </nav>       
       </div>
     </header>
@@ -25,10 +35,10 @@
         <div class="index-menu">
           <ul>
             <li>
-              <a href="#DiskDesfrag">Desfragmentar disco</a>
+              <a class="nav" href="#DiskDesfrag">Desfragmentar disco</a>
             </li>
             <li>
-              <a href="#HowDesfrag">Como Desfragmentar</a>
+              <a class="nav" href="#HowDesfrag">Como Desfragmentar</a>
             </li>
           </ul>
         </div>       
@@ -52,12 +62,12 @@
           <ul>
               <li>
                   <p>Abrir Ejecutar con las teclas Windows + R</p>
-                  <img src="img_pc/Desfrag.png">
+                  <img class="img-nv img-nv--small" src="img_pc/Desfrag.png">
                   <p>Luego de ello escribir dfrgui, como se muestra en la imagen y ACEPTAR.</p>
               </li>
               <li>
                   <p>Se les abrira la interfaz donde se podra desfragmentar</p>
-                  <img src="img_pc/Desfrag2.png">
+                  <img class="img-nv" src="img_pc/Desfrag2.png">
                   <p>Escoger todas las unidades mostradas para que lo desfragmente y optimice en caso de ser una unidad solida.</p>
               </li>
           </ul>

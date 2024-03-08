@@ -8,14 +8,24 @@
 
   <body class="container">
 
+    <script src="scripts.js"></script>
+
     <header id="inicio">
       <div class="header-content">
         <img class="profile" src="img/perfil.jpg" width="100" />
+        <div class="div mode-color">
+          <label class="ui-switch">
+            <input onclick="toggleDarkMode()" type="checkbox">
+            <div class="slider">
+              <div class="circle"></div>
+            </div>
+          </label> 
+        </div>
         <nav class="main-navigation">
-          <a href="Home.html">Inicio</a>
-          <a href="">Optimizacion</a>
-          <a href="">Programas</a>
-          <a href="About.html">Acerca de</a>
+          <a class="nav" href="Home.html">Inicio</a>
+          <a class="nav" href="">Optimizacion</a>
+          <a class="nav" href="">Programas</a>
+          <a class="nav" href="About.html">Acerca de</a>
         </nav>
       </div>
     </header>
@@ -26,13 +36,13 @@
         <div class="index-menu">
           <ul>
             <li>
-              <a href="#PlanEnergia">Plan de energía</a>
+              <a class="nav" href="#PlanEnergia">Plan de energía</a>
             </li>
             <li>
-              <a href="#PlanMaxRend">Plan maximo rendimiento</a>
+              <a class="nav" href="#PlanMaxRend">Plan maximo rendimiento</a>
             </li>
             <li>
-              <a href="#Activar">Como activarlo</a>
+              <a class="nav" href="#Activar">Como activarlo</a>
             </li>
           </ul>
         </div>
@@ -61,7 +71,7 @@
             cambio significativo ya que como se indica en la descripcion es mas
             recomendable usarlo en dispositivos de gama alta
           </p>
-          <img src="img_pc/MaxRendimiento.png" />
+          <img class="img-nv img-nv--small" src="img_pc/MaxRendimiento.png" />
         </div>
         <div>
           <h2 id="Activar">Como activarlo</h2>
@@ -69,7 +79,7 @@
             Para activar el plan de energía de maximo rendimiento, se requiere
             abrir Windows PowerShell con la tecla windows + x.
           </p>
-          <img src="img_pc/powershell.PNG" />
+          <img class="img-nv img-nv--small" src="img_pc/powershell.PNG" />
           <p>
             Abrimos Windows PowerShell como administrador y les aparecera la
             siguiente interfaz
@@ -77,7 +87,7 @@
           <img class="img-nv" src="img_pc/int powershell.PNG" />
           <p>Dentro de la interfaz escribimos el siguiente comando:</p>
           <div class="highlight">
-            <span id="comand"
+            <span class="tx-copy" id="comand"
               >powercfg -duplicatescheme
               e9a42b02-d5df-448d-aa00-03f14749eb61</span
             >

@@ -25,14 +25,24 @@
 
   <body class="container">
 
-    <header id="inicio">
+    <script src="scripts.js"></script>
+
+    <header class="header" id="inicio">
       <div class="header-content">
         <img class="profile" src="img/perfil.jpg" width="100" />
+        <div class="div mode-color">
+          <label class="ui-switch">
+            <input onclick="toggleDarkMode()" type="checkbox">
+            <div class="slider">
+              <div class="circle"></div>
+            </div>
+          </label> 
+        </div>              
         <nav class="main-navigation">
-          <a href="Home.html">Inicio</a>
-          <a href="">Optimizacion</a>
-          <a href="">Programas</a>
-          <a href="About.html">Acerca de</a>
+          <a class="nav" href="Home.html">Inicio</a>
+          <a class="nav" href="">Optimizacion</a>
+          <a class="nav" href="">Programas</a>
+          <a class="nav" href="About.html">Acerca de</a>
         </nav>
       </div>
     </header>
@@ -40,56 +50,57 @@
     <section class="opcion">
         <div class="opcion-content">
           <div>
-            <a href="AMaxRend.html">
+            <a class="nav" href="AMaxRend.html">
               <h2>Activar Maximo rendimiento</h2>
               <img src="img/energy-1.png" width="100" />
+              <p>Pasos para activar la opcion de energia de maximo rendimiento.</p>
             </a>
-            <p>Pasos para activar la opcion de energia de maximo rendimiento.</p>
+            
           </div>       
         </div>
         <div class="opcion-content">
           <div>
-            <a href="ArchivosTemp.html">
+            <a class="nav" href="ArchivosTemp.html">
               <h2>Eliminar archivos temporales</h2>
               <img src="img/temporary-files-1.png" width="100" />
-            </a>
-            <p>
-              Eliminacion de archivos temporales para la reduccion de almacenamiento
-              y ganar rendimiento.
-            </p>
+              <p>
+                Eliminacion de archivos temporales para la reduccion de almacenamiento
+                y ganar rendimiento.
+              </p>
+            </a>          
           </div>         
         </div>
         <div class="opcion-content">
           <div>
-            <a href="Desfragmentar.html">
+            <a class="nav" href="Desfragmentar.html">
               <h2>Desfragmentar disco</h2>
               <img src="img/optimization-1.png" width="100" />
-            </a>
-            <p>
-              Desfragmentar el disco o unidad para obtener un mejor rendimiento
-              optimizando los archivos.
-            </p>
+              <p>
+                Desfragmentar el disco o unidad para obtener un mejor rendimiento
+                optimizando los archivos.
+              </p>
+            </a>            
           </div>        
         </div>
         <div class="opcion-content">
           <div>
-            <a href="ONvidia.html">
+            <a class="nav" href="ONvidia.html">
               <h2>Optimizacion para Nvidia e Intel</h2>
               <img src="img/nvidia.png" width="100" />
-            </a>
-            <p>
-              Optimizar juegos por el panel grafico de Nvidia y el panel de intel para obtener un mejor
-              rendimiento.
-            </p>
+              <p>
+                Optimizar juegos por el panel grafico de Nvidia y el panel de intel para obtener un mejor
+                rendimiento.
+              </p>
+            </a>         
           </div>         
         </div>
         <div class="opcion-content">
           <div>
-            <a href="ProgrammsRend.html">
+            <a class="nav" href="ProgrammsRend.html">
               <h2>Programas y Paginas web</h2>
               <img src="img/program-1.png" width="100" />
-            </a>
-            <p>Programas y paginas web para tu Computadora.</p>
+              <p>Programas y paginas web para tu Computadora.</p>
+            </a>           
           </div>          
         </div>   
     </section>

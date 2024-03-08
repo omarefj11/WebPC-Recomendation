@@ -7,14 +7,24 @@
 
   <body class="container">
 
+    <script src="scripts.js"></script>
+
     <header id="inicio">
       <div class="header-content">
         <img class="profile" src="img/perfil.jpg" width="100" />
+        <div class="div mode-color">
+          <label class="ui-switch">
+            <input onclick="toggleDarkMode()" type="checkbox">
+            <div class="slider">
+              <div class="circle"></div>
+            </div>
+          </label> 
+        </div>
         <nav class="main-navigation">
-          <a href="Home.html">Inicio</a>
-          <a href="">Optimizacion</a>
-          <a href="">Programas</a>
-          <a href="About.html">Acerca de</a>
+          <a class="nav" href="Home.html">Inicio</a>
+          <a class="nav" href="">Optimizacion</a>
+          <a class="nav" href="">Programas</a>
+          <a class="nav" href="About.html">Acerca de</a>
         </nav>
       </div>
     </header>
@@ -25,10 +35,10 @@
         <div class="index-menu">
           <ul>
             <li>
-              <a href="#FileTemp">Archivos temporales</a>
+              <a class="nav" href="#FileTemp">Archivos temporales</a>
             </li>
             <li>
-              <a href="#HowDelete">Como eliminarlos</a>
+              <a class="nav" href="#HowDelete">Como eliminarlos</a>
             </li>
           </ul>
         </div>    
@@ -60,13 +70,13 @@
           <img src="img_pc/Ejecutar.PNG" />
           <p>Para ello se tiene que escribir los siguientes comandos:</p>
           <div class="highlight">
-            <span id="comand1">%temp%</span>
+            <span class="tx-copy" id="comand1">%temp%</span>
             <button onclick="copiarTexto1()" class="highlight-copy-btn">
               Copiar
             </button>
           </div>
           <div class="highlight">
-            <span id="comand2">temp</span>
+            <span class="tx-copy" id="comand2">temp</span>
             <button onclick="copiarTexto2()" class="highlight-copy-btn">
               Copiar
             </button>
