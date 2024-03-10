@@ -86,6 +86,12 @@ header {
   display: flex;
   align-items: center;
 }
+.menu-btn{
+  display: none;
+  align-items: center;
+}
+
+
 /*---------------------------------*/
 aside {
   background-color: rgb(255, 255, 255);
@@ -167,6 +173,26 @@ footer {
       "footer";
   }
 
+  .menu-btn{
+    display: flex;
+    align-items: center;
+  }
+
+  .main-navigation{
+    display: none;
+    flex-direction: column;
+  }
+
+  .container.change-menu{
+    grid-template-rows: 10lh;
+  }
+  .container.change-menu .main-navigation{
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    bottom: 55%;
+  }
+
   .home {
     width: 30px;
     height: 30px;
@@ -222,11 +248,9 @@ footer {
 /*----------btnModeColor------------*/
 
 .ui-switch {
-  /* switch */
   --switch-bg: rgb(135, 150, 165);
   --switch-width: 48px;
   --switch-height: 20px;
-  /* circle */
   --circle-diameter: 32px;
   --circle-bg: rgb(0, 56, 146);
   --circle-inset: calc((var(--circle-diameter) - var(--switch-height)) / 2);

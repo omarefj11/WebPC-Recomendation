@@ -8,4 +8,10 @@ function toggleDarkMode() {
     } else {
       localStorage.setItem("dark-mode", "false");
     }
-  }
+}
+
+function toggleMenu() {
+  
+  var body = document.body;
+  body.classList.toggle("change-menu");
+}
