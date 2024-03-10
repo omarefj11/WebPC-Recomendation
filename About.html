@@ -7,14 +7,24 @@
 
   <body class="container">
 
+    <script src="scripts.js"></script>
+
     <header id="inicio">
       <div class="header-content">
         <img class="profile" src="img/perfil.jpg" width="100" />
+        <div class="div mode-color">
+          <label class="ui-switch">
+            <input onclick="toggleDarkMode()" type="checkbox">
+            <div class="slider">
+              <div class="circle"></div>
+            </div>
+          </label> 
+        </div> 
         <nav class="main-navigation">
-          <a href="Home.html">Inicio</a>
-          <a href="">Optimizacion</a>
-          <a href="">Programas</a>
-          <a href="About.html">Acerca de</a>
+          <a class="nav" href="Home.html">Inicio</a>
+          <a class="nav" href="">Optimizacion</a>
+          <a class="nav" href="">Programas</a>
+          <a class="nav" href="About.html">Acerca de</a>
         </nav>
         <a onclick="toggleMenu()" class="menu-btn">
           <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
@@ -30,13 +40,13 @@
           <div class="index-menu">
             <ul>
               <li>
-                <a href="#AboutMe">¿Quién soy?</a>
+                <a class="nav" href="#AboutMe">¿Quién soy?</a>
               </li>
               <li>
-                <a href="#Propouse">¿Cual es el propocito?</a>
+                <a class="nav" href="#Propouse">¿Cual es el propocito?</a>
               </li>
               <li>
-                <a href="#Realization">¿Porque realizarlo?</a>
+                <a class="nav" href="#Realization">¿Porque realizarlo?</a>
               </li>
             </ul>
           </div>    
